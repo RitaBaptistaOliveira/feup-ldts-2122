@@ -1,0 +1,21 @@
+9
+jar,0
+magnet,0
+fish,0
+pamphlet,1
+wind up key,0
+worm,1
+key,0
+---
+bulletin board,-1,-1
+tree hollow,2,-1
+hole in the ground,3,2
+river,4,3
+flower pot,6,-1
+bird,8,7
+door,-1,8
+---
+As you enter, you see the entrance door to a house.The tree has a tree hollow.
+Next to your feet there's a worm, a hole in the ground, probably its house. It's its own little world.
+There is also a bulletin board.
+All of this combined with the nice river flowing gives you goosebumps. You feel at home.

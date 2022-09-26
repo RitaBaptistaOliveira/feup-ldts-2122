@@ -1,0 +1,11 @@
+2
+pocket knife,0
+axe,0
+---
+pile of leaves,0,-1
+rope,1,0
+tree,-1,1
+---
+As you enter the forest you step on a pile of leaves.
+You look around and see a light coming from behind a big tree.
+There's also a sharp axe hanging from a another tree tied to a rope.

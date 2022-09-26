@@ -1,0 +1,33 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'info.solidsoft.pitest' version '1.7.0'
+}
+
+group 'forestMaze'
+version '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+pitest {
+    junit5PluginVersion = '0.15'
+}
+
+application {
+    mainClass.set('forestMaze.Game')
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.2'
+    testImplementation 'org.mockito:mockito-core:4.2.0'
+    testImplementation 'net.jqwik:jqwik:1.6.2'
+
+    implementation group: 'com.googlecode.lanterna', name: 'lanterna', version: '3.1.1'
+}
+
+test {
+    useJUnitPlatform()
+}

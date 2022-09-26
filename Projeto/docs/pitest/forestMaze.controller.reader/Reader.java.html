@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+
+
+<h1>Reader.java</h1>
+
+<table class="src">
+
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6ddc67d0_1'/>
+1
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6ddc67d0_1'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>package forestMaze.controller.reader;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6ddc67d0_2'/>
+2
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6ddc67d0_2'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6ddc67d0_3'/>
+3
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6ddc67d0_3'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>public abstract class Reader&#60;T&#62; {</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6ddc67d0_4'/>
+4
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6ddc67d0_4'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    abstract T read();</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6ddc67d0_5'/>
+5
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6ddc67d0_5'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6ddc67d0_6'/>
+6
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6ddc67d0_6'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    protected String removeSpaces(String filename){</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6ddc67d0_7'/>
+7
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6ddc67d0_7'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        StringBuilder newFilename = new StringBuilder();</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6ddc67d0_8'/>
+8
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6ddc67d0_8'>2</a>
+<span>
+
+1. removeSpaces : changed conditional boundary &rarr; KILLED<br/>
+
+2. removeSpaces : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        for(int i = 0; i &#60; filename.length(); i++){</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6ddc67d0_9'/>
+9
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6ddc67d0_9'>1</a>
+<span>
+
+1. removeSpaces : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            if(filename.charAt(i) != &#39; &#39;){</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6ddc67d0_10'/>
+10
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6ddc67d0_10'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>                newFilename.append(filename.charAt(i));</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6ddc67d0_11'/>
+11
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6ddc67d0_11'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>            }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6ddc67d0_12'/>
+12
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6ddc67d0_12'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6ddc67d0_13'/>
+13
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6ddc67d0_13'>1</a>
+<span>
+
+1. removeSpaces : replaced return value with &#34;&#34; for forestMaze/controller/reader/Reader::removeSpaces &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return newFilename.toString();</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6ddc67d0_14'/>
+14
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6ddc67d0_14'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6ddc67d0_15'/>
+15
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6ddc67d0_15'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>}</span></pre></td></tr>
+
+
+
+<tr><td></td><td></td><td><h2>Mutations</h2></td></tr>
+
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@6ddc67d0_8'>8</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@6ddc67d0_8'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>removeSpaces<br/><b>Killed by : </b>forestMaze.controller.game.commands.PickUpCommandTest.[engine:junit-jupiter]/[class:forestMaze.controller.game.commands.PickUpCommandTest]/[method:pickUpEmptyString()]</span></span> changed conditional boundary &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>removeSpaces<br/><b>Killed by : </b>forestMaze.controller.game.commands.PickUpCommandTest.[engine:junit-jupiter]/[class:forestMaze.controller.game.commands.PickUpCommandTest]/[method:pickUpEmptyString()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@6ddc67d0_9'>9</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@6ddc67d0_9'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>removeSpaces<br/><b>Killed by : </b>forestMaze.controller.game.commands.PickUpCommandTest.[engine:junit-jupiter]/[class:forestMaze.controller.game.commands.PickUpCommandTest]/[method:pickUpEmptyString()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@6ddc67d0_13'>13</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@6ddc67d0_13'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>removeSpaces<br/><b>Killed by : </b>forestMaze.controller.game.commands.PickUpCommandTest.[engine:junit-jupiter]/[class:forestMaze.controller.game.commands.PickUpCommandTest]/[method:pickUpEmptyString()]</span></span> replaced return value with &#34;&#34; for forestMaze/controller/reader/Reader::removeSpaces &rarr; KILLED</p> 
+</td>
+</tr>
+
+</table>
+
+
+<h2>Active mutators</h2>
+<ul>
+
+<li class='mutator'>CONDITIONALS_BOUNDARY</li>
+
+<li class='mutator'>EMPTY_RETURNS</li>
+
+<li class='mutator'>FALSE_RETURNS</li>
+
+<li class='mutator'>INCREMENTS</li>
+
+<li class='mutator'>INVERT_NEGS</li>
+
+<li class='mutator'>MATH</li>
+
+<li class='mutator'>NEGATE_CONDITIONALS</li>
+
+<li class='mutator'>NULL_RETURNS</li>
+
+<li class='mutator'>PRIMITIVE_RETURNS</li>
+
+<li class='mutator'>TRUE_RETURNS</li>
+
+<li class='mutator'>VOID_METHOD_CALLS</li>
+
+</ul>
+
+<h2>Tests examined</h2>
+<ul>
+<li>forestMaze.controller.game.commands.UseOnCommandTest.[engine:junit-jupiter]/[class:forestMaze.controller.game.commands.UseOnCommandTest]/[method:UseOnInvalidItem()] (40 ms)</li><li>forestMaze.controller.game.commands.ShowInventoryCommandTest.[engine:junit-jupiter]/[class:forestMaze.controller.game.commands.ShowInventoryCommandTest]/[method:showInventoryTest()] (9 ms)</li><li>forestMaze.controller.MenuControllerTest.[engine:junit-jupiter]/[class:forestMaze.controller.MenuControllerTest]/[method:step()] (15 ms)</li><li>forestMaze.controller.game.commands.HoldCommandTest.[engine:junit-jupiter]/[class:forestMaze.controller.game.commands.HoldCommandTest]/[method:HoldValidItem()] (10 ms)</li><li>forestMaze.controller.game.commands.UseOnCommandTest.[engine:junit-jupiter]/[class:forestMaze.controller.game.commands.UseOnCommandTest]/[method:UseOnExitItem()] (12 ms)</li><li>forestMaze.controller.game.commands.PickUpCommandTest.[engine:junit-jupiter]/[class:forestMaze.controller.game.commands.PickUpCommandTest]/[method:pickUpInvalidItem()] (5 ms)</li><li>forestMaze.controller.game.commands.UseOnCommandTest.[engine:junit-jupiter]/[class:forestMaze.controller.game.commands.UseOnCommandTest]/[method:UseOnEmptyString()] (7 ms)</li><li>forestMaze.controller.game.commands.GoToNextRoomTest.[engine:junit-jupiter]/[class:forestMaze.controller.game.commands.GoToNextRoomTest]/[method:goToNextRoomEnd()] (13 ms)</li><li>forestMaze.controller.game.commands.GoToPreviousRoomTest.[engine:junit-jupiter]/[class:forestMaze.controller.game.commands.GoToPreviousRoomTest]/[method:goToPreviousRoomValid()] (15 ms)</li><li>forestMaze.controller.game.commands.HoldCommandTest.[engine:junit-jupiter]/[class:forestMaze.controller.game.commands.HoldCommandTest]/[method:HoldInvalidItem()] (10 ms)</li><li>forestMaze.controller.game.commands.GoToNextRoomTest.[engine:junit-jupiter]/[class:forestMaze.controller.game.commands.GoToNextRoomTest]/[method:goToNextRoomInvalid()] (10 ms)</li><li>forestMaze.controller.game.commands.PickUpCommandTest.[engine:junit-jupiter]/[class:forestMaze.controller.game.commands.PickUpCommandTest]/[method:pickUpValidItem()] (7 ms)</li><li>forestMaze.controller.game.commands.InteractWithCommandTest.[engine:junit-jupiter]/[class:forestMaze.controller.game.commands.InteractWithCommandTest]/[method:interactWithValidUnusedExitItem()] (12 ms)</li><li>forestMaze.controller.game.commands.UseOnCommandTest.[engine:junit-jupiter]/[class:forestMaze.controller.game.commands.UseOnCommandTest]/[method:UseOnUnusedItem()] (29 ms)</li><li>forestMaze.controller.game.commands.UseOnCommandTest.[engine:junit-jupiter]/[class:forestMaze.controller.game.commands.UseOnCommandTest]/[method:UseOnUsedItem()] (40 ms)</li><li>forestMaze.controller.game.commands.InteractWithCommandTest.[engine:junit-jupiter]/[class:forestMaze.controller.game.commands.InteractWithCommandTest]/[method:interactWithEmptyString()] (10 ms)</li><li>forestMaze.controller.game.commands.LookAtCommandTest.[engine:junit-jupiter]/[class:forestMaze.controller.game.commands.LookAtCommandTest]/[method:LookatEmptyString()] (11 ms)</li><li>forestMaze.controller.game.commands.InteractWithCommandTest.[engine:junit-jupiter]/[class:forestMaze.controller.game.commands.InteractWithCommandTest]/[method:interactWithValidUsedItem()] (27 ms)</li><li>forestMaze.model.MenuTest.[engine:junit-jupiter]/[class:forestMaze.model.MenuTest]/[method:nextEntry()] (17 ms)</li><li>forestMaze.controller.game.commands.GoToPreviousRoomTest.[engine:junit-jupiter]/[class:forestMaze.controller.game.commands.GoToPreviousRoomTest]/[method:goToPreviousRoomInvalid()] (14 ms)</li><li>forestMaze.controller.game.commands.GoToNextRoomTest.[engine:junit-jupiter]/[class:forestMaze.controller.game.commands.GoToNextRoomTest]/[method:goToNextRoomValid()] (15 ms)</li><li>forestMaze.controller.game.commands.LookAtCommandTest.[engine:junit-jupiter]/[class:forestMaze.controller.game.commands.LookAtCommandTest]/[method:LookAtValidHoldableItem()] (16 ms)</li><li>forestMaze.controller.game.commands.LookAtCommandTest.[engine:junit-jupiter]/[class:forestMaze.controller.game.commands.LookAtCommandTest]/[method:LookAtValidInteractableItem()] (22 ms)</li><li>forestMaze.controller.game.commands.HoldCommandTest.[engine:junit-jupiter]/[class:forestMaze.controller.game.commands.HoldCommandTest]/[method:HoldEmptyString()] (11 ms)</li><li>forestMaze.controller.game.commands.LookAtCommandTest.[engine:junit-jupiter]/[class:forestMaze.controller.game.commands.LookAtCommandTest]/[method:LookAtInvalidItem()] (15 ms)</li><li>forestMaze.ui.LanternaTest.[engine:junit-jupiter]/[class:forestMaze.ui.LanternaTest]/[method:drawCharacter()] (17 ms)</li><li>forestMaze.controller.game.commands.PickUpCommandTest.[engine:junit-jupiter]/[class:forestMaze.controller.game.commands.PickUpCommandTest]/[method:pickUpEmptyString()] (6 ms)</li>
+</ul>
+
+<br/>
+
+Report generated by <a href='http://pitest.org'>PIT</a> 1.7.0
+
+</body>
+</html>
