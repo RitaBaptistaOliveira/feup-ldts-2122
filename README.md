@@ -1,2 +1,2 @@
-# feup-ldts-2122
+# FEUP LDTS 21/22
 FEUP LDTS repository 21/22
