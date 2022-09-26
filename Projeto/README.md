@@ -1,7 +1,7 @@
 # LDTS_T09_G05 - Forest Maze
 
 ## Grade
-__Final Grade: __ 12.86
+__Final Grade:__ 12.86
 
 ## Game Description 
 In this project we decided to create a graphic adventure where the player goes through the game's world and interacts with the environment through verb commands (for example, look at, pick up, etc.).
